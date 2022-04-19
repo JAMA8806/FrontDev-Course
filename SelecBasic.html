@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Basicos</title>
+    <style>
+        
+        header{
+        background: sandybrown;
+        }
+        div{
+            background: rebeccapurple;
+            color: white;
+        }
+        .Titulo{
+            color: grey;
+        }
+        #Titulo2{
+            color: rgb(185, 185, 155);
+        }
+        a[href="https://platzi.com/clases/2467-frontend-developer/40835-tipos-de-selectores-basicos-y-combinadores/"] {
+            background: burlywood;
+            color: rgb(58, 119, 106) 
+        } 
+        
+        div h1{ 
+            text-align: center;
+        }
+        div > h1{
+            color: red;
+            background: rgb(190, 186, 183);
+        }
+        div + section{
+            background: cornflowerblue;
+        }
+        div ~ p{
+            color: rgb(224, 131, 9);
+        }
+
+
+    </style>
+</head>
+<body>
+    <Header>Este sera selector de tipor</Header>
+    <div class="Titulo">
+        <h1>El titulo,</h1>
+        <p>por</p>
+        <p>Clase</p>
+        
+    </div>     
+    <div class="Titulo">Este es otro de tipo</div>
+    <div id="Titulo2">Esta es la prueba en Id</div>
+    
+    <a href="https://platzi.com/clases/2467-frontend-developer/40835-tipos-de-selectores-basicos-y-combinadores/">Clase Tipos de Selectores
+    </a>
+    <div> Y aca fuera de Section
+    </div>
+    <p>esta es otra</p>
+    <p>de las pruebas</p>
+    <div></div><section>
+        First section "adyacente"
+    </section>
+    <div>
+       Esta es neutra 
+    </div>
+    
+</body>
+</html>
