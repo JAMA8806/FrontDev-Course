@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+        
+        <title>Inicio</title>
+        <style>
+             :root{
+                --white: #ffffff;
+                --black: #000000;
+                --very-light-pink: #c7c7c7;
+                --text-imput-field: #f7f7f7;
+                --hospital-green: #ACD982;
+                --sm: 14px;
+                --md: 16px;
+                --lg: 18px;
+                --card-size: 240px;
+                --card-size-maxwidth: 140px;
+                --card-size-order: 70px;
+            }
+            body{
+                font-family: 'Quicksand', sans-serif;
+                margin: 16px;
+                
+            }
+
+            .main-container{
+                display: grid;
+                width: 100%;
+                height: auto;
+                justify-items:end               
+            }
+
+            .shopping-car{
+               width: 350px;
+               
+            }
+
+            .title{
+                display: grid;
+                grid-template-columns: auto 1fr auto 1fr;
+                justify-content:center;
+                align-items: center;
+                font-size: var(--lg);
+                font-weight: bold;
+                color: var(--black);
+                border-bottom: 1px solid var(--very-light-pink);
+            }
+
+            .title h1{
+                font-size: var(--lg);
+            }
+
+            .item-container{
+                display: flex;
+                align-items:center;
+                justify-content: space-between;
+                margin: 24px 0;
+            }
+
+            .item-image{
+                margin: 0;
+            }
+
+            .item-container p{
+                margin: 16px 8px;
+                font-weight: bold;
+            }
+
+            .item-container img{
+                cursor: pointer;
+            }
+
+            p.item-text{
+                flex-grow: 8;
+                color: var(--very-light-pink);
+            }
+            figure img{
+                width: var(--card-size-order);
+                height: var(--card-size-order);
+                border-radius: 12px;
+                object-fit: cover;
+                margin: 0;
+                cursor: pointer;
+            }
+
+            .total{
+                height: 56px;
+                background: var(--text-imput-field);
+                border-radius: 12px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 12px;
+                margin: 12px 0 24px;
+            }
+            
+            .total p{
+                color: var(--black);
+                font-weight: bold;
+                font-size: var(--sm);
+            }
+        
+            .primary-button{
+                background-color: var(--hospital-green);
+                border-radius: 12px;
+                border: none;
+                font-size: var(--md);
+                color: var(--white);
+                width: 100%;
+                font-weight: bold;
+                height: 60px;
+                cursor: pointer;
+            }
+           @media (max-width: 640px) {
+               .main-container{
+                   justify-items: center;
+               }
+                .shopping-car{
+                   width: 100%;
+               }                 
+           }
+
+
+        </style>
+    </head>
+    <title>Order</title>
+</head>
+<body>
+    <div class="main-container">
+        <aside class="shopping-car">
+            <div class="title">
+                <img src="./icons/Platzi_YardSale_Icons/icon_menu.svg" alt="">
+                <div></div>
+                <h1>Shopping Car</h1>
+            </div>
+            <div class="item-container">
+                <figure class="item-image">
+                    <img src="https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="car">
+                </figure>
+                <p class="item-text">Car</p>
+                <p class="item-price">$ Car Price</p>
+                <img src="./icons/Platzi_YardSale_Icons/icon_close.png" alt="">
+            </div>
+            <div class="item-container">
+                <figure class="item-image">
+                    <img src="https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="car">
+                </figure>
+                <p class="item-text">Car</p>
+                <p class="item-price">$ Car Price</p>
+                <img src="./icons/Platzi_YardSale_Icons/icon_close.png" alt="">
+            </div>
+            <div class="item-container">
+                <figure class="item-image">
+                    <img src="https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="car">
+                </figure>
+                <p class="item-text">Car</p>
+                <p class="item-price">$ Car Price</p>
+                <img src="./icons/Platzi_YardSale_Icons/icon_close.png" alt="">
+            </div>
+            <div class="item-container">
+                <figure class="item-image">
+                    <img src="https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="car">
+                </figure>
+                <p class="item-text">Car</p>
+                <p class="item-price">$ Car Price</p>
+                <img src="./icons/Platzi_YardSale_Icons/icon_close.png" alt="">
+            </div>
+            <div class="total">
+                <p>Total</p>
+                <p>$$$$$$$$</p>
+            </div>
+            <button class="primary-button">
+                    Checkout
+            </button>  
+        </aside>        
+    </div> 
+</body>
+</html>

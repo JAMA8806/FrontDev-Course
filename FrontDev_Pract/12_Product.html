@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+         :root{
+                --white: #ffffff;
+                --black: #000000;
+                --very-light-pink: #c7c7c7;
+                --text-imput-field: #f7f7f7;
+                --hospital-green: #ACD982;
+                --sm: 14px;
+                --md: 16px;
+                --lg: 18px;
+                --card-size: 240px;
+                --card-size-maxwidth: 140px;
+                --card-size-order: 70px;
+            }
+            body{
+                font-family: 'Quicksand', sans-serif;
+                margin: 0;
+            }
+
+            .main-container{
+                display: grid;
+                width: 100%;
+                height: auto;
+                justify-items:end
+            }
+
+            .product-detail{
+                width: 350px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }            
+            .product-image{
+                width: auto;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                position: relative;
+            }
+            .product-image img:first-child{
+                width: 350px;
+                height: 350px;
+                object-fit: cover;
+                border-bottom-left-radius: 12px;
+                border-bottom-right-radius: 12px;
+                position: relative;
+            }
+            .product-image .close-icon:hover{
+                cursor: pointer;
+            }
+            .product-image .close-icon{
+                width: var(--lg);
+                height: var(--lg);
+                position:absolute;
+                top: 4px;
+                right: 4px;
+                background-color: var(--white);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .product-image .close-icon img{
+                width: var(--sm);
+                height: var(--sm);
+            }
+            
+            .product-scroll{
+               display: flex;
+               justify-content: center;
+            }
+
+            .product-scroll li{
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: var(--very-light-pink);
+                margin: 16px 8px;
+                list-style: none;
+            }
+
+            .product-scroll li:hover{
+                background: var(--hospital-green);
+                cursor: pointer;
+            }
+
+            .product-info{
+                margin: 8px;
+                
+            }
+
+            .product-info h1{
+                font-size: var(--lg);
+                font-weight: bold;
+                margin-bottom: 8px;
+            }
+            .product-info h2{
+                font-size: var(--lg);
+                font-weight: bold;
+                color: var(--very-light-pink);
+                margin-top: 8px;
+            }
+
+            .product-info p{
+                font-size: var(--md);
+                color: var(--very-light-pink);
+            }
+
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 8px;
+                margin-right: 8px;
+                background: #acd9b2;
+                color: var(--white);
+                border: none;
+                border-radius: 12px;
+                font-size: var(--lg);
+               
+                bottom: 16px;
+                width: 350px;
+                height: 60px;
+            }
+
+            @media (max-width: 670px) {
+                .product-detail{
+                    width: 100%;
+                }
+                
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <aside class="product-detail">
+            <figure class="product-image">
+            <img src="https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="product-image">
+            <div class="close-icon">
+               <img src="./icons/Platzi_YardSale_Icons/icon_close.png" alt="Close"> 
+            </div>
+              
+            </figure>       
+            <div class="product-scroll">
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </div>
+            <article class="product-info">
+                <h1>$120,00</h1>
+                <h2>Retro Refrigerator</h2>
+                <p>With a beautifull desing, this computer will allow you to take as  many courses as possible in platzi. Its performance is unique.</p>
+            </article>
+            <button class="primary-button">
+                <img src="./icons/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="add">
+                Add to cart
+            </button>
+        </aside> 
+    </div>   
+    
+</body>
+</html>

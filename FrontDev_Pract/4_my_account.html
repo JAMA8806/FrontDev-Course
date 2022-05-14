@@ -1,0 +1,134 @@
+<!DOCTYh1E html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <title>Crea Contraseña</title>
+    <style>
+         :root{
+            --white: #ffffff;
+            --black: #000000;
+            --very-light-pink: #c7c7c7;
+            --text-imput-field: #f7f7f7;
+            --hospital-green: #ACD982;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body{
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+        .login{
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-items: center;
+                        
+        }
+
+        <!--form-container-->.{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 300px;
+            justify-items: center;
+        }
+
+        .form-container{
+        display: flex;
+        width: 300px;
+        justify-items: center;
+        flex-direction: column;
+        }
+        
+
+                
+        .title{
+            font-size: var(--md);
+            color: var(--black);
+            text-align: start;
+            font-weight: bold;
+            margin-bottom: 32px;
+            
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .label{
+            font-size: var(--sm);
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .input{
+            background-color: var(--text-imput-field);
+            border: none;
+            border-radius: 8px;
+            height: 32px;
+            font-size: var(--md);
+            padding: 8px;
+            margin-bottom: 24px;
+
+        }
+
+        .primary-button{
+            background-color: var(--hospital-green);
+            border-radius: 12px;
+            border: none;
+            font-size: var(--md);
+            color: var(--white);
+            width: 100%;
+            font-weight: bold;
+            height: 60px;
+            cursor: pointer;
+        }
+
+        .save-button{
+            margin-top: 16px;
+            margin-bottom: 32px;
+        }
+
+         @media (max-width: 640px) {
+            .save-button{
+                position: absolute;
+                bottom: 0;
+                width: 300px;    
+            }
+        }     
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <div><h1 class="title">My Account</h1></div>
+            <form action="" class="form">
+                <label for="name" class="label">Name</label>
+                <input type="text" id="Name" placeholder="Julian" class="input input-name">
+
+                <label for="email" class="label">Email address</label>
+                <input type="text" id="email" placeholder="julianb.e8806@gmail.com" class="input input-email">
+
+                <label for="password" class="label">Password</label>
+                <input type="password" id="password" placeholder="*********" class="input input-password">
+                               
+            </form>
+            <button class="primary-button save-button">save</button>
+  
+        </div>
+
+    </div>
+</body>
+</html>
